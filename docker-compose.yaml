@@ -1,6 +1,11 @@
 name: java
 services:
-
+  spring:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - '8081:8080'
   mongoKongo:
     image: 'mongo:latest'
     environment:
