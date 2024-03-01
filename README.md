@@ -19,3 +19,23 @@ To get a local copy up and running follow these simple steps.
 ```bash
 git clone https://github.com/yourusername/demo-spring-boot-docker-gradle.git
 cd demo-spring-boot-docker-gradle
+```
+
+
+### Build the project
+
+```bash
+./gradlew build
+```
+
+## Run docker-compose
+
+```bash
+./gradlew composeUp
+```
+
+## shutdown docker-compose
+
+```bash
+./gradlew composeDown
+```
